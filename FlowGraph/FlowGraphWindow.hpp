@@ -13,6 +13,7 @@ class FlowGraphWindow : public QMainWindow
     Q_OBJECT
 
     public:
+        // Public Constructor(s)/Destructor
         explicit FlowGraphWindow(QWidget * parent = nullptr);
         virtual ~FlowGraphWindow();
 
