@@ -1,11 +1,12 @@
 #include "FlowGraphWindow.hpp"
 #include <QApplication>
 
-int main(int argc, char *argv[])
+int main(int argc, char * argv[])
 {
-    QApplication a(argc, argv);
-    FlowGraphWindow w;
-    w.show();
+    QApplication app(argc, argv);
 
-    return a.exec();
+    FlowGraphWindow flowWindow;
+    flowWindow.show();
+
+    return app.exec();
 }

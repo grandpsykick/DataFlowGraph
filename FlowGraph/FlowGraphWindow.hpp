@@ -3,20 +3,21 @@
 
 #include <QMainWindow>
 
-namespace Ui {
+namespace Ui
+{
     class FlowGraphWindow;
 }
 
 class FlowGraphWindow : public QMainWindow
 {
-        Q_OBJECT
+    Q_OBJECT
 
     public:
-        explicit FlowGraphWindow(QWidget *parent = 0);
-        ~FlowGraphWindow();
+        explicit FlowGraphWindow(QWidget * parent = nullptr);
+        virtual ~FlowGraphWindow();
 
     private:
-        Ui::FlowGraphWindow *ui;
+        Ui::FlowGraphWindow * ui;
 };
 
 #endif // FLOWGRAPHWINDOW_HPP
