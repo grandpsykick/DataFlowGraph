@@ -2,6 +2,7 @@
 #include "ui_FlowGraphWindow.h"
 #include "FlowGraphScene.hpp"
 #include "FlowGraphView.hpp"
+#include "FlowGraphNode.hpp"
 
 FlowGraphWindow::FlowGraphWindow(FlowGraphScene * scene, FlowGraphView * view,
                                  QWidget * parent)
@@ -14,6 +15,7 @@ FlowGraphWindow::FlowGraphWindow(FlowGraphScene * scene, FlowGraphView * view,
         this->m_view = new FlowGraphView(Q_NULLPTR, this);
         this->setCentralWidget(this->m_view);
         this->m_scene = dynamic_cast<FlowGraphScene*>(this->m_view->scene());
+        this->m_scene->addItem(new FlowGraphNode());
     }
 }
 

@@ -28,10 +28,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         FlowGraphWindow.cpp \
     FlowGraphView.cpp \
-    FlowGraphScene.cpp
+    FlowGraphScene.cpp \
+    FlowGraphNode.cpp
 
 HEADERS += FlowGraphWindow.hpp \
     FlowGraphView.hpp \
-    FlowGraphScene.hpp
+    FlowGraphScene.hpp \
+    FlowGraphNode.hpp
 
 FORMS   += FlowGraphWindow.ui

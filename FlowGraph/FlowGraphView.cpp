@@ -4,14 +4,11 @@
 FlowGraphView::FlowGraphView(FlowGraphScene * scene, QWidget * parent)
     : QGraphicsView(scene, parent), m_scene(scene)
 {
-    if(this->m_scene != Q_NULLPTR)
+    if(this->m_scene == Q_NULLPTR)
     {
-        this->setScene(scene);
+        this->m_scene = new FlowGraphScene(this);
     }
-    else
-    {
-        this->setScene(this->m_scene = new FlowGraphScene(this));
-    }
+    this->setScene(this->m_scene);
 }
 
 FlowGraphView::~FlowGraphView()
